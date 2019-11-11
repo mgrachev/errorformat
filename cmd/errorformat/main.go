@@ -10,9 +10,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/reviewdog/errorformat"
-	"github.com/reviewdog/errorformat/fmts"
-	"github.com/reviewdog/errorformat/writer"
+	"github.com/mgrachev/errorformat"
+	"github.com/mgrachev/errorformat/fmts"
+	"github.com/mgrachev/errorformat/writer"
 )
 
 const usageMessage = "" +

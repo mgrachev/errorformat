@@ -9,7 +9,7 @@ import (
 	"os"
 	"sort"
 
-	"github.com/reviewdog/errorformat/fmts"
+	"github.com/mgrachev/errorformat/fmts"
 )
 
 func main() {

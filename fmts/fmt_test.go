@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/reviewdog/errorformat"
+	"github.com/mgrachev/errorformat"
 )
 
 func TestFmts(t *testing.T) {

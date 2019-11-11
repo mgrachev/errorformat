@@ -1,4 +1,4 @@
-module github.com/reviewdog/errorformat
+module github.com/mgrachev/errorformat
 
 go 1.13
 

@@ -4,7 +4,7 @@ package writer
 import (
 	"io"
 
-	"github.com/reviewdog/errorformat"
+	"github.com/mgrachev/errorformat"
 )
 
 // Writer represents error result writer.

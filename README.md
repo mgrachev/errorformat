@@ -2,14 +2,14 @@
 
 [![Travis Build Status][travis-badge]](https://travis-ci.org/reviewdog/errorformat)
 [![codecov][codecov-badge]](https://codecov.io/gh/haya14busa/reviewdog)
-[![Go Report Card](https://goreportcard.com/badge/github.com/reviewdog/errorformat)](https://goreportcard.com/report/github.com/reviewdog/errorformat)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mgrachev/errorformat)](https://goreportcard.com/report/github.com/mgrachev/errorformat)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GoDoc](https://godoc.org/github.com/reviewdog/errorformat?status.svg)](https://godoc.org/github.com/reviewdog/errorformat)
+[![GoDoc](https://godoc.org/github.com/mgrachev/errorformat?status.svg)](https://godoc.org/github.com/mgrachev/errorformat)
 
 errorformat is Vim's quickfix [errorformat](https://vim-jp.org/vimdoc-en/quickfix.html#error-file-format) implementation in golang.
 
 errorformat provides default errorformats for major tools.
-You can see defined errorformats [here](https://godoc.org/github.com/reviewdog/errorformat/fmts).
+You can see defined errorformats [here](https://godoc.org/github.com/mgrachev/errorformat/fmts).
 Also, it's easy to [add new errorformat](fmts/README.md) in a similar way to Vim's errorformat.
 
 Note that it's highly compatible with Vim implementation, but it doesn't support Vim regex.
@@ -24,7 +24,7 @@ errorformat implementation in Go with JavaScript :sparkles:
 ### Usage
 
 ```go
-import "github.com/reviewdog/errorformat"
+import "github.com/mgrachev/errorformat"
 ```
 
 ### Example 
@@ -59,7 +59,7 @@ golint.new.go|11 col 1| comment on exported function F2 should be of the form "F
 #### Installation
 
 ```
-go get -u github.com/reviewdog/errorformat/cmd/errorformat
+go get -u github.com/mgrachev/errorformat/cmd/errorformat
 ```
 
 #### Usage
@@ -149,7 +149,7 @@ $ errorformat "%E[%t%.%+] %f:%l: error: %m" "%A[%t%.%+] %f:%l: %m" "%Z[%.%+] %p^
 $ cat fmts/testdata/sbt.in | errorformat -name=sbt -w=checkstyle
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="1.0">
-  <file name="/home/haya14busa/src/github.com/reviewdog/errorformat/fmts/testdata/resources/scala/scalac.scala">
+  <file name="/home/haya14busa/src/github.com/mgrachev/errorformat/fmts/testdata/resources/scala/scalac.scala">
     <error column="3" line="6" message="missing argument list for method error in object Predef" severity="error"></error>
     <error column="15" line="4" message="private val in object F is never used" severity="warning"></error>
     <error column="15" line="5" message="private method in object F is never used" severity="warning"></error>
